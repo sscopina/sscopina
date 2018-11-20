@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Forum');
+
+@font-face {
+ font-family: "Wremena";
+ src: url("../fonts/WremenaRegular.woff") format("woff");
+}
+
+
+body {
+  width: 100vw;
+  font-family: "Wremena";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #FEFEFE;
+  color: #06021C;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::-moz-selection {
+    background: rgba(0, 0, 0, 1);
+    color: white;
+}
+
+*::selection {
+    background: rgba(0, 0, 0, 1);
+    color: white;
+}
+
+.div_img {
+  background-image: url(../img/HSE_BAUM_BASE_RED_LINE.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.section_menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #FEFEFE;
+  width: 43%;
+  height: 100vh;
+  font-size: 14px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.section__main_menu {
+  margin: auto;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.paragraph_menu {
+  font-size: 24px;
+  font-weight: 100;
+  padding: 30px 0 30px 30px;
+}
+
+.element {
+/*  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;*/
+  text-transform: uppercase;
+  padding: 20px 0 10px 30px;
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  align-items: center;
+  overflow: visible;
+  color: #000;
+  transition: all .3s ease;
+  opacity: 1;
+  letter-spacing: 1;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.element_img {
+  width: 56px;
+  height: 56px;
+  position: relative;
+  margin-right: 20px;
+  opacity: 1;
+  transition: all .01s ease;
+}
+
+.element_img:hover {
+  cursor: grab;
+}
+
+.element:hover {
+  opacity: .9;
+  text-decoration: line-through;
+}
+
+.draggable {
+  z-index: 1234589;
+}
+
+img.static {
+  position: absolute;
+}
+
+img.static:hover {
+  cursor: default;
+}
+
+.menu_green {
+  margin-top: -195px;
+}
+
+.menu_purple {
+  margin-top: -115px;
+}
